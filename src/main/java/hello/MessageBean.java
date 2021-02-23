@@ -29,16 +29,22 @@ public class MessageBean implements Serializable {
         switch (value){
             case "":
             case "pt":
-                msg = "Alô";
+                msg = "Alô, meu consagrado ";
                 break;
             case "en":
-                msg = "Hello";
-                break;
-            case "de":
-                msg = "Hallo";
+                msg = "Hello, my friend ";
                 break;
             case "fr":
-                msg = "Bonjour";
+                msg = "Bonjour, mon amie ";
+                break;
+            case "de":
+                msg = "Hallo, mein freund ";
+                break;
+            case "es":
+                msg = "Hola, mi amigo ";
+                break;
+            case "ru":
+                msg = "Привет, мой друг ";
                 break;
         }
     }

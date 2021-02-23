@@ -114,13 +114,22 @@ public class HelloServlet extends HttpServlet {
             lang = "pt";
         switch(lang){
             case "pt":
-                msg = "Alô, ";
+                msg = "Alô, meu consagrado ";
                 break;
             case "en":
-                msg = "Hello, ";
+                msg = "Hello, my friend ";
                 break;
             case "fr":
-                msg = "Bonjour, ";
+                msg = "Bonjour, mon amie ";
+                break;
+            case "de":
+                msg = "Hallo, mein freund ";
+                break;
+            case "es":
+                msg = "Hola, mi amigo ";
+                break;
+            case "ru":
+                msg = "Привет, мой друг ";
                 break;
         }
         
@@ -212,23 +221,29 @@ public class HelloServlet extends HttpServlet {
             lang = "pt";
         switch(lang){
             case "pt":
-                msg = "Alô, ";
+                msg = "Alô, meu consagrado ";
                 break;
             case "en":
-                msg = "Hello, ";
+                msg = "Hello, my friend ";
                 break;
             case "fr":
-                msg = "Bonjour, ";
+                msg = "Bonjour, mon amie ";
                 break;
             case "de":
-                msg = "Hallo, ";
+                msg = "Hallo, mein freund ";
+                break;
+            case "es":
+                msg = "Hola, mi amigo ";
+                break;
+            case "ru":
+                msg = "Привет, мой друг ";
                 break;
         }
         
         String nome = request.getParameter("nome");
 
         if(nome==null)
-            nome = "Fulano";
+            nome = "amiguinho";
         
         msg = msg+nome+"!";
 
